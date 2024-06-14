@@ -45,7 +45,7 @@ Viernes y sábado: 5pm-12am`, { delay: 4000 })
                     }
 
                     default: {
-                        return fallBack('🌟 ¡por favor ingresa una opcion valida! 🌟')
+                        return fallBack('🌟 ¡por favor ingresa una opcion valida! 🌟..')
                     }
                 }
             },
