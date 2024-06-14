@@ -19,16 +19,5 @@ export const clienteActualFlow = addKeyword<Provider, Database>('USUARIOS_REGIST
         '    - En efectivo (necesitas devuelta?)',
         '    - Para transferencia: Bancolombia ahorros XX'
     ].join('\n'),
-    { delay: 800, capture: true },
-    async (ctx, {state, fallBack ,gotoFlow}) => {
-        reset(ctx, gotoFlow, Number(process.env.TIEMPOINACTIVIDAD));
-       const tipoCliente = ctx.body;
-       if (!['1', '2'].includes(tipoCliente)) {
-           return fallBack('¡por favor ingresa una opcion valida! 🌟')
-         }
-            await state.update({ tipoCliente: ctx.body })
-            return null;
-
-    },
-    []
+    { delay: 800, capture: true }
 )
