@@ -7,22 +7,25 @@ import { reset, start } from '../idle-custom'
 
 
 export const welcomeFlow = addKeyword<Provider, Database>(['hola', 'hoola', 'ole', 'alo', 'buenas', 'menu', 'holi', 'hol', 'oe', 'buenos'])
-.addAnswer(`🤟🏻 ¡Bienvenido a LOCAL DE PERRAS! 🌭🍔🍟
-Las perras más irresistibles del planeta. Somos diferentes, te lo aseguro:
-🥓 No somos tocineta, somos cerdo ahumado hecho con mucho cuidado para que valga la pena el pecao´
-🍞 Nuestro pan es casero y artesanal, nada tradicional
-🍅 Salsas especiales, hechas a mano, nada industriales
+.addAnswer(`Llegaste a perriar a
+LOCAL DE PERRAS! 🌭
 
-🤤 Menú: https://www.instagram.com/stories/highlights/18020276515790871/
+¿De qué estás antojado hoy?
+Todos nuestros productos son artesanales e irresistibles. Nuestro producto estrella es ⭐️ la Perra especial grande.
 
-📍 Ubicaciones
-• Sabaneta: Después del hospital Venancio Diaz
-• Envigado: Barrio Alcalá
-*En esta sede también puedes pedir opciones mexicanas: https://www.instagram.com/stories/highlights/18323790559134119/
+🤤 Antójate haciendo click aquí: [enlace a story en redes actualizada] - pendiente valen @~Vale
 
-😎 Abrimos todos los días
-Domingo a jueves: 5pm-11pm
-Viernes y sábado: 5pm-12am`, { delay: 4000 })
+😎 Abrimos todos los días a las 5pm
+📍 Sede Sabaneta y Envigado
+
+QUÉ QUIERES HOY?
+
+La experiencia para perriar con nosotros es muy fácil. Solo debes responder con el número según lo que necesites:
+
+1. 🛵 Domicilio
+2. 🥡 Pedir y recoger en tienda
+3. 🗣️ Hablar con alguien
+`, { delay: 4000 })
     .addAction(async (ctx, { gotoFlow }) => start(ctx, gotoFlow, Number(process.env.TIEMPOINACTIVIDAD) ))
     .addAnswer(
         [
