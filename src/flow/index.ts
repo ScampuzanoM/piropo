@@ -1,9 +1,10 @@
 
 import { createFlow } from '@builderbot/bot';
-import { clienteActualFlow } from './cliente.actual.flow';
+import { domicilioFlow } from './domicilio.flow';
+import { recogerFlow } from './recoger.flow';
 import { welcomeFlow } from "./welcome.flow";
 import { idleFlow } from '../idle-custom'
 import * as dotenv from 'dotenv';
 dotenv.config();
 
-export const flow = createFlow([welcomeFlow, clienteActualFlow, idleFlow])
+export const flow = createFlow([welcomeFlow, domicilioFlow, idleFlow,recogerFlow])
