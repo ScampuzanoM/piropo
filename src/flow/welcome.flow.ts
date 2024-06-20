@@ -16,7 +16,7 @@ export const welcomeFlow = addKeyword<Provider, Database>(['hola', 'hoola', 'ole
         '¿De qué estás antojado hoy?',
         'Todos nuestros productos son artesanales e irresistibles. Nuestro producto estrella es ⭐️ la Perra especial grande.',
         '',
-        '🤤 Antójate haciendo click aquí: [enlace a story en redes actualizada] - pendiente valen @~Vale',
+        '🤤 Antójate haciendo click aquí: https://www.instagram.com/s/aGlnaGxpZ2h0OjE4MDIwMjc2NTE1NzkwODcx?story_media_id=3390496530443508766&igsh=ZHl5OTI3MmdxcWZy',
         '',
         '😎 Abrimos todos los días a las 5pm',
         '📍 Sede Sabaneta y Envigado',
