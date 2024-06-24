@@ -13,5 +13,6 @@ export const alguienFlow = addKeyword<Provider, Database>('algiuien')
     ]
 )
 .addAnswer(
-    [' *menu*'],
+    ['menu'],
 { media: 'https://firebasestorage.googleapis.com/v0/b/flikflka.appspot.com/o/elite-pagos%2Fmenu2.jpg?alt=media&token=72b28d98-881a-4d98-8814-019308bdf7e2' })
+
