@@ -7,7 +7,12 @@ const timers = {};
 // Flow for handling inactivity
 const idleFlow = addKeyword(EVENTS.ACTION).addAction(
     async (_, { endFlow }) => {
-        return endFlow('🚫 Lamentamos informarte que la sesión se ha cancelado por inactividad. Para continuar, por favor escribe *menú* o *hola* y estaré encantado de ayudarte nuevamente. 😊');
+        return endFlow(
+            '~~Eyyy, tu de rojo, y yo con este antojo!🤤~~\n' +
+            'Acá sigo pendiente de ti, esperando a ver de qué te antojas\n' +
+            'Perra especial, hamburguesa o qué tal unas papas crisper con bastante salsita de la casa?😏\n' +
+            'Irresistible.... https://www.instagram.com/p/C2iuseYxbuj/'
+        );
     }
 );
 
