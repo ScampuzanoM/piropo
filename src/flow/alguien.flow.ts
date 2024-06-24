@@ -10,5 +10,10 @@ export const alguienFlow = addKeyword<Provider, Database>('algiuien')
         'Te voy a comunicar con alguien del equipo de *Local de Perras* de Sabaneta 🌭',
         '',
         'Mientras te respondemos te dejo el menú para que te vayas antojando de nuestras delicias 🤤⬇️'
+    ]
+)
+.addAnswer(
+    [
+        ''
     ],
 { media: 'https://firebasestorage.googleapis.com/v0/b/flikflka.appspot.com/o/elite-pagos%2Fmenu.jpeg?alt=media&token=56041095-4a11-48f2-aeba-eb0b1a9d969f' })
