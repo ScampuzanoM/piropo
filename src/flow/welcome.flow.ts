@@ -47,7 +47,7 @@ export const welcomeFlow = addKeyword<Provider, Database>(['hola', 'hoola', 'ole
 
 
                     default: {
-                        return fallBack('🌟 ¡por favor ingresa una opcion valida! 🌟..')
+                     //   return fallBack('🌟 ¡por favor ingresa una opcion valida! 🌟..')
                     }
                 }
             },
