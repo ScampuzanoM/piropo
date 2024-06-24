@@ -6,7 +6,7 @@ import { reset } from '../idle-custom';
 export const recogerFlow = addKeyword<Provider, Database>('USUARIOS_REGISTRADOS')
 //.addAnswer(`📲 Vas a querer comerte todas estas delicias. Recuerda que puedes engallar GRATIS tu pedido con queso costeño, puerro crocante, relish de pepinillos, cebollas encurtidas y nuestras salsas artesanales ⬇️😏`, { delay: 4000 })
 .addAnswer([' '],
-{ media: 'https://firebasestorage.googleapis.com/v0/b/flikflka.appspot.com/o/elite-pagos%2FM%20LOCAL.jpg?alt=media&token=8f2d6ba5-24ad-44d7-ba35-112470282aa2' })
+{ media: 'https://firebasestorage.googleapis.com/v0/b/flikflka.appspot.com/o/elite-pagos%2Fmenu.jpeg?alt=media&token=56041095-4a11-48f2-aeba-eb0b1a9d969f' })
 .addAnswer(
     [
         '✍🏻 Para agilizarte tu pedido, envíame:',

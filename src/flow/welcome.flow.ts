@@ -5,7 +5,7 @@ import { domicilioFlow } from './domicilio.flow';
 import { recogerFlow } from './recoger.flow';
 import { reset, start } from '../idle-custom';
 
-
+import {alguienFlow} from "./alguien.flow"
 
 export const welcomeFlow = addKeyword<Provider, Database>(['hola', 'hoola', 'ole', 'alo', 'buenas', 'menu', 'holi', 'hol', 'oe', 'buenos'])
 .addAnswer(
@@ -41,6 +41,10 @@ export const welcomeFlow = addKeyword<Provider, Database>(['hola', 'hoola', 'ole
                     case '2': {
                         return gotoFlow(recogerFlow)
                     }
+                    case '3': {
+                        return gotoFlow(alguienFlow)
+                    }
+
 
                     default: {
                         return fallBack('🌟 ¡por favor ingresa una opcion valida! 🌟..')
